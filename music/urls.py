@@ -21,4 +21,6 @@ urlpatterns = [
     # ex: /music/album/5/delete/
     path('album/<int:pk>/delete', views.AlbumDelete.as_view(), name='album-delete'),
 
+    path('register/', views.UserFormView.as_view(), name='register'),
+
 ]
